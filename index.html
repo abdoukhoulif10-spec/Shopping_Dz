@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping DZ | تسوق في الجزائر</title>
+
+    <meta
+        name="description"
+        content="Shopping DZ - متجر إلكتروني متعدد الأقسام في الجزائر"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+    <div class="top-bar">
+        🚚 توصيل إلى جميع الولايات الجزائرية
+        <span>•</span>
+        📞 تأكيد الطلب هاتفيًا
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="#" class="logo">
+                SHOPPING <span>DZ</span>
+            </a>
+
+
+            <!-- SEARCH -->
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="ابحث عن منتج..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    id="searchButton"
+                    aria-label="بحث"
+                >
+                    🔍
+                </button>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+            <div class="header-actions">
+
+                <button class="header-button">
+                    ♡
+                    <span>المفضلة</span>
+                </button>
+
+                <button
+                    class="header-button cart-button"
+                    id="cartButton"
+                >
+                    🛒
+                    <span>السلة</span>
+                    <b id="cartCount">0</b>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
+
+        <nav class="main-navigation">
+
+            <button class="nav-item active" data-category="all">
+                الكل
+            </button>
+
+            <button class="nav-item" data-category="beauty">
+                🧴 العناية والجمال
+            </button>
+
+            <button class="nav-item" data-category="electronics">
+                📱 الإلكترونيات
+            </button>
+
+            <button class="nav-item" data-category="home">
+                🏠 المنزل والمطبخ
+            </button>
+
+            <button class="nav-item" data-category="tools">
+                🧰 الأدوات والمستلزمات
+            </button>
+
+            <button class="nav-item" data-category="fashion">
+                👕 الأزياء
+            </button>
+
+            <button class="nav-item deals" data-category="deals">
+                🔥 العروض
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero-section">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    SHOPPING DZ
+                </span>
+
+                <h1>
+                    كل ما تحتاجه،
+                    <br>
+                    في مكان واحد.
+                </h1>
+
+                <p>
+                    اكتشف مجموعة متنوعة من المنتجات
+                    المختارة بعناية، واطلب بسهولة
+                    أينما كنت في الجزائر.
+                </p>
+
+                <button
+                    class="primary-button"
+                    id="exploreButton"
+                >
+                    اكتشف المنتجات
+                    <span>←</span>
+                </button>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-circle"></div>
+
+                <div class="hero-product">
+                    🛒
+                </div>
+
+                <div class="floating-card card-one">
+                    🚚
+                    <strong>توصيل</strong>
+                    <small>58 ولاية</small>
+                </div>
+
+                <div class="floating-card card-two">
+                    ⭐
+                    <strong>منتجات متنوعة</strong>
+                    <small>اختيارات مميزة</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">
+                        اكتشف
+                    </span>
+
+                    <h2>
+                        تسوق حسب القسم
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="categories-grid">
+
+                <button
+                    class="category-card"
+                    data-category="beauty"
+                >
+                    <div class="category-icon">
+                        🧴
+                    </div>
+
+                    <strong>
+                        العناية والجمال
+                    </strong>
+
+                    <span>
+                        اكتشف المنتجات
+                    </span>
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="electronics"
+                >
+                    <div class="category-icon">
+                        📱
+                    </div>
+
+                    <strong>
+                        الإلكترونيات
+                    </strong>
+
+                    <span>
+                        أجهزة وإكسسوارات
+                    </span>
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="home"
+                >
+                    <div class="category-icon">
+                        🏠
+                    </div>
+
+                    <strong>
+                        المنزل والمطبخ
+                    </strong>
+
+                    <span>
+                        حلول عملية
+                    </span>
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="tools"
+                >
+                    <div class="category-icon">
+                        🧰
+                    </div>
+
+                    <strong>
+                        الأدوات والمستلزمات
+                    </strong>
+
+                    <span>
+                        منتجات عملية
+                    </span>
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="fashion"
+                >
+                    <div class="category-icon">
+                        👕
+                    </div>
+
+                    <strong>
+                        الأزياء
+                    </strong>
+
+                    <span>
+                        أناقة يومية
+                    </span>
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="deals"
+                >
+                    <div class="category-icon">
+                        🔥
+                    </div>
+
+                    <strong>
+                        العروض
+                    </strong>
+
+                    <span>
+                        أسعار مميزة
+                    </span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
+        <section
+            class="section products-section"
+            id="productsSection"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-label">
+                        SHOPPING DZ
+                    </span>
+
+                    <h2 id="productsTitle">
+                        المنتجات الأكثر طلبًا
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="view-all"
+                    id="viewAllButton"
+                >
+                    عرض الكل
+                    ←
+                </button>
+
+            </div>
+
+
+            <div
+                class="products-grid"
+                id="productsGrid"
+            >
+
+                <!--
+                    المنتجات سيتم توليدها
+                    بواسطة JavaScript
+                -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TRUST
+        ========================== -->
+
+        <section class="trust-section">
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+                    🚚
+                </div>
+
+                <div>
+                    <strong>
+                        توصيل لجميع الولايات
+                    </strong>
+
+                    <p>
+                        اختر ولايتك وسيظهر سعر التوصيل.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+                    📞
+                </div>
+
+                <div>
+                    <strong>
+                        تأكيد الطلب
+                    </strong>
+
+                    <p>
+                        نتواصل معك قبل إرسال الطلب.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="trust-card">
+
+                <div class="trust-icon">
+                    🛡️
+                </div>
+
+                <div>
+                    <strong>
+                        طلب بسيط وواضح
+                    </strong>
+
+                    <p>
+                        تعرف السعر والتوصيل قبل التأكيد.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo footer-logo">
+                    SHOPPING <span>DZ</span>
+                </a>
+
+                <p>
+                    متجر إلكتروني متعدد الأقسام
+                    للزبائن في الجزائر.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    الأقسام
+                </h3>
+
+                <a href="#">
+                    العناية والجمال
+                </a>
+
+                <a href="#">
+                    الإلكترونيات
+                </a>
+
+                <a href="#">
+                    المنزل والمطبخ
+                </a>
+
+                <a href="#">
+                    الأزياء
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    المساعدة
+                </h3>
+
+                <a href="#">
+                    كيفية الطلب
+                </a>
+
+                <a href="#">
+                    معلومات التوصيل
+                </a>
+
+                <a href="#">
+                    تواصل معنا
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Shopping DZ
+                </h3>
+
+                <p>
+                    🇩🇿 الجزائر
+                </p>
+
+                <p>
+                    توصيل إلى 58 ولاية
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Shopping DZ
+            — جميع الحقوق محفوظة
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         PRODUCT MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="productModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="إغلاق"
+            >
+                ×
+            </button>
+
+            <div id="productDetails">
+
+                <!--
+                    تفاصيل المنتج
+                    سيتم وضعها بواسطة JavaScript
+                -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         CART MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="cartModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content cart-modal">
+
+            <button
+                class="modal-close"
+                id="cartClose"
+            >
+                ×
+            </button>
+
+            <h2>
+                🛒 سلة الطلبات
+            </h2>
+
+            <div id="cartItems">
+                <p>
+                    السلة فارغة حاليًا.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         SCRIPTS
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
